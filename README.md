@@ -1,3 +1,8 @@
+![GitHub repo size](https://img.shields.io/github/repo-size/DupieM/DuPlessisMarine_Astro)
+![GitHub watchers](https://img.shields.io/github/watchers/DupieM/DuPlessisMarine_Astro)
+![GitHub language count](https://img.shields.io/github/languages/count/DupieM/DuPlessisMarine_Astro)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/DupieM/DuPlessisMarine_Astro)
+
 <!-- HEADER SECTION -->
 <h5 align="center" style="padding:0;margin:0;">Dieter | Erik | Ungerer | Mariné | Hannah</h5>
 <h5 align="center" style="padding:0;margin:0;">221122 | 221147 | 221302 | 221326 | 21100366</h5>
