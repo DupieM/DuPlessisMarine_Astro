@@ -1,0 +1,682 @@
+
+$base-color: #c6538c; // example of scss color variable
+$border-dark: rgba($base-color, 0.88);
+
+// * color sheet
+$negative: #FC684E;
+$positiveColor: #0B9457;
+$primaryColor: #7E4AC0;
+$lighterprimaryColor: #7049a460;
+$white: #fff;
+$grayedTextColor: #909498;
+$borderColor02: #606060;
+$darkGray: #36434F;
+$darkBackground: #19252F;
+$darkerBackground: #0E1922;
+$black: #000;
+$darkStroke: #242424;
+
+
+.mainContainer {
+    background-color: $darkBackground;
+    // width: 100%;
+    width: 83vw;
+    height: 100%;
+    display: flex;
+    user-select: none; // to prevent text highlighting
+    height: 100vh;
+
+    h3 {
+        color: $white;
+    }
+
+    p {
+        color: $white;
+    }
+}
+
+.dividerLine {
+    height: 2px;
+    width: 90%;
+    border-radius: 2px;
+    background-color: $black;
+    opacity: 0.5;
+}
+
+.dividerLine02 {
+    height: 2px;
+    width: 100%;
+    border-radius: 2px;
+    background-color: $grayedTextColor;
+    opacity: 0.5;
+}
+
+.subtitle {
+    font-size: 10px;
+    font-weight: 400;
+    opacity: .5;
+}
+
+.optionFont {
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.loggedUserBlock {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+.loggedUserTextBlock h1 {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.loggedUserTextBlock p {
+    font-size: 12px;
+    margin-top: -10px;
+    color: #909498;
+}
+
+.contentContainer {
+    background-color: $darkBackground;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100%;
+    height: fit-content;
+
+    h1 {
+        font-size: 42px;
+        color: $white;
+        font-weight: 900;
+    }
+
+    h2 {
+        color: $white;
+    }
+}
+
+.detailsDisplayBox {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 20px;
+    width: 500px;
+    border-radius: 12px;
+    background-color: $darkerBackground;
+    margin-bottom: 20px;
+
+    h1 {
+        font-size: 32px;
+        color: $white;
+        text-transform: capitalize;
+        margin: 0;
+    }
+
+    .detailsTextBox {
+        h2 {
+            font-size: 16px;
+            color: $white;
+        }
+
+        p {
+            color: $white;
+            font-size: 12px;
+            margin: 0;
+        }
+
+        .totalBox {
+            background-color: $primaryColor;
+            width: fit-content;
+            padding: 5px 12px 5px 12px;
+            border-radius: 6px;
+        }
+    }
+}
+
+.filterContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.filterBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    .filterOption {
+        border: 1px solid $white;
+        // padding: 0px 20px 0px 20px;
+        cursor: pointer;
+        transition: all ease-in-out .1s;
+        color: $white;
+        overflow: hidden;
+
+        &:hover {
+            // background-color: #909498;
+            transition: all ease-in-out .1s;
+            // Glass Effect
+            background: rgba(144, 19, 254, 0.25);
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+            backdrop-filter: blur(4px);
+            -webkit-backdrop-filter: blur(4px);
+            // border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.18);
+        }
+
+
+
+        #thrityDaysFilterBtn {
+            background-color: transparent;
+            outline: none;
+            border: none;
+            margin: 0;
+            padding: 0px 20px 0px 20px;
+            width: auto;
+            height: auto;
+            cursor: pointer;
+        }
+
+        #sevenDaysFilterBtn {
+            background-color: transparent;
+            outline: none;
+            border: none;
+            margin: 0;
+            padding: 0px 20px 0px 20px;
+            width: auto;
+            height: auto;
+            cursor: pointer;
+        }
+    }
+
+    .filterOption01 {
+        border: 1px solid $white;
+        // padding: 0px 20px 0px 20px;
+        cursor: pointer;
+        border-radius: 10px 0px 0px 10px;
+        transition: all ease-in-out .1s;
+        color: $white;
+        overflow: hidden;
+
+        &:hover {
+            // background-color: #909498;
+            transition: all ease-in-out .1s;
+            // Glass Effect
+            background: rgba(144, 19, 254, 0.25);
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+            backdrop-filter: blur(4px);
+            -webkit-backdrop-filter: blur(4px);
+            // border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.18);
+        }
+
+        #allFilterBtn {
+            background-color: transparent;
+            outline: none;
+            border: none;
+            margin: 0;
+            padding: 0px 20px 0px 20px;
+            width: auto;
+            height: auto;
+            cursor: pointer;
+        }
+    }
+
+    .filterOption04 {
+        border: 1px solid $white;
+        // padding: 0px 20px 0px 20px;
+        cursor: pointer;
+        border-radius: 0px 10px 10px 0px;
+        transition: all ease-in-out .1s;
+        color: $white;
+        overflow: hidden;
+
+        &:hover {
+            // background-color: #909498;
+            transition: all ease-in-out .1s;
+            // Glass Effect
+            background: rgba(144, 19, 254, 0.25);
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+            backdrop-filter: blur(4px);
+            -webkit-backdrop-filter: blur(4px);
+            // border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.18);
+        }
+
+        #twentyFourHoursFilterBtn {
+            background-color: transparent;
+            outline: none;
+            border: none;
+            margin: 0;
+            padding: 0px 20px 0px 20px;
+            width: auto;
+            height: auto;
+            cursor: pointer;
+        }
+    }
+
+    .filterOptionText {
+        font-size: 12px;
+        font-weight: 600px;
+    }
+}
+
+.filterBarByType {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    .filterOption {
+        cursor: pointer;
+        transition: all ease-in-out .1s;
+        color: $white;
+        overflow: hidden;
+        background-color: $lighterprimaryColor;
+
+        &:hover {
+            transition: all ease-in-out .1s;
+            // Glass Effect
+            background: rgba(144, 19, 254, 0.25);
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+            backdrop-filter: blur(4px);
+            -webkit-backdrop-filter: blur(4px);
+        }
+
+
+
+        #thrityDaysFilterBtn {
+            background-color: transparent;
+            outline: none;
+            border: none;
+            margin: 0;
+            padding: 0px 20px 0px 20px;
+            width: auto;
+            height: auto;
+            cursor: pointer;
+        }
+
+        #sevenDaysFilterBtn {
+            background-color: transparent;
+            outline: none;
+            border: none;
+            margin: 0;
+            padding: 0px 20px 0px 20px;
+            width: auto;
+            height: auto;
+            cursor: pointer;
+        }
+    }
+
+    .filterOption01 {
+        cursor: pointer;
+        border-radius: 10px 0px 0px 10px;
+        transition: all ease-in-out .1s;
+        color: $white;
+        overflow: hidden;
+        background-color: $lighterprimaryColor;
+
+        &:hover {
+            transition: all ease-in-out .1s;
+            // Glass Effect
+            background: rgba(144, 19, 254, 0.25);
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+            backdrop-filter: blur(4px);
+            -webkit-backdrop-filter: blur(4px);
+        }
+
+        #allFilterBtn {
+            background-color: transparent;
+            outline: none;
+            border: none;
+            margin: 0;
+            padding: 0px 20px 0px 20px;
+            width: auto;
+            height: auto;
+            cursor: pointer;
+        }
+    }
+
+    .filterOption04 {
+        // padding: 0px 20px 0px 20px;
+        cursor: pointer;
+        border-radius: 0px 10px 10px 0px;
+        transition: all ease-in-out .1s;
+        color: $white;
+        background-color: $lighterprimaryColor;
+        overflow: hidden;
+
+        &:hover {
+            transition: all ease-in-out .1s;
+            // Glass Effect
+            background: rgba(144, 19, 254, 0.25);
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+            backdrop-filter: blur(4px);
+            -webkit-backdrop-filter: blur(4px);
+        }
+
+        #twentyFourHoursFilterBtn {
+            background-color: transparent;
+            outline: none;
+            border: none;
+            margin: 0;
+            padding: 0px 20px 0px 20px;
+            width: auto;
+            height: auto;
+            cursor: pointer;
+        }
+    }
+
+    .filterOptionText {
+        font-size: 12px;
+        font-weight: 600px;
+    }
+}
+
+.secondaryFilterCon {
+    display: flex;
+    gap: 10px;
+}
+
+.searchFieldCon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    border: 1px solid #E5E5E6;
+    padding: 5px;
+    border-radius: 5px;
+    gap: 5px;
+
+    img {
+        width: 16px;
+    }
+}
+
+.filterSearchInput {
+    // border: 1px solid #E5E5E6;
+    border-radius: 5px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: $white;
+}
+
+.dropDownMenu {
+
+    .filterButton {
+        background-color: transparent;
+        border: 1px solid $white;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all ease-in-out .1s;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 6px;
+        color: $white;
+        padding: 6px;
+
+        img {
+            width: 16px;
+        }
+
+        &:hover {
+            background-color: #dadada;
+            transition: all ease-in-out .1s;
+            // color: #fff;
+        }
+    }
+
+    .dropDownContent {
+        display: none;
+        position: absolute;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+
+        button {
+            padding: 8px 30px 8px 30px;
+            outline: none;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            background-color: transparent;
+            color: $white;
+
+            &:hover {
+                background-color: $primaryColor;
+                color: $white;
+            }
+        }
+    }
+
+    &:hover .dropDownContent {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0px 12px 12px 12px;
+        overflow: hidden;
+        // backdrop-filter: blur(5px);
+        border: 1px solid $borderColor02;
+        // Glass Effect
+        background: rgba(70, 70, 70, 0.25);
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
+        border-radius: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+    }
+}
+
+.detailsDropblock {
+    .detailsDropContent {
+        display: none;
+        position: absolute;
+        right: 180px;
+        background-color: $positiveColor;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+    &:hover .detailsDropContent {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 12px 12px 12px 12px;
+        padding: 10px 20px 10px 20px;
+        overflow: hidden;
+
+        h3 {
+            margin: 10px;
+        }
+
+        .detailsTextContent {
+
+            p {
+                color: $white;
+                margin: 0;
+            }
+        }
+    }
+}
+
+
+.transactionTableMianCon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    padding: 0px 24px 10px 24px;
+    border-radius: 10px;
+    border: 2px solid $darkStroke;
+    background-color: $darkerBackground;
+    gap: 10px;
+    width: 95%;
+    margin-bottom: 80px;
+    // width: 1098px;
+}
+
+.tableTopRow {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    justify-content: space-between;
+    column-gap: 40px;
+
+    p {
+        color: $white;
+    }
+}
+
+.innerTableCon {
+    width: 100%;
+    display: grid;
+    grid-template-rows: repeat(auto);
+    row-gap: 20px;
+}
+
+.contentRowTile {
+    // display: flex;
+    // flex-direction: row;
+    // justify-content: space-between;
+    // align-items: center;
+    // width: 100%;
+    // gap: 40px;
+    // width: 1072px;
+
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    column-gap: 40px;
+    justify-content: space-between;
+    width: auto;
+
+    // background-color: $primaryColor;
+    border: 1px solid $primaryColor;
+    padding: 2px 20px 2px 20px;
+    border-radius: 20px;
+
+    .nameDataBlock {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 10px;
+        width: 200px;
+
+        .userProfilePlacholder {
+            border-radius: 50px;
+            width: 30px;
+            height: 30px;
+            background-color: $primaryColor;
+        }
+
+        .userNameData {
+            display: flex;
+            flex-direction: column;
+            height: 66px;
+
+            .dataIdNumber {
+                font-size: 12px;
+                color: $grayedTextColor;
+                position: relative;
+                top: -25px;
+            }
+        }
+    }
+
+    .dateDataBlock {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        // width: 150px;
+
+        .transactionDateBlock,
+        .timeDataBlock {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 5px;
+
+            .timeData {
+                line-height: 0px;
+                font-size: 12px;
+                color: $grayedTextColor;
+                position: relative;
+                top: -10px;
+            }
+        }
+    }
+
+    .amountDataBlock {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        // width: 100px;
+    }
+
+    .invoiceDataBlock {
+        width: 100px;
+
+        p {
+            color: $grayedTextColor;
+        }
+    }
+
+    .statusDataBlock {
+        width: 100px;
+    }
+
+    .actionDataBlock {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .detailsBtn {
+            background-color: $primaryColor;
+            color: $white;
+            outline: none;
+            border: 1px solid #625671;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding: 4px 2px 4px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+
+            img {
+                width: 18px;
+            }
+        }
+    }
+}
+
+.tableText01 {
+    font-size: 16px;
+    color: $white;
+}
+
+.dateData {
+    font-size: 16px;
+}
+
+.positiveText {
+    color: $positiveColor;
+}
+
+.negativeText {
+    color: $negative;
+}

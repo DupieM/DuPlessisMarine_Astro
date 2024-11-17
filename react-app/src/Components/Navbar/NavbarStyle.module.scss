@@ -1,0 +1,243 @@
+:root {
+  --positiveColor: #0b9457;
+  --negative: #fc684e;
+  --white: #fff;
+  --black: #000;
+  --primaryColor: #7e4ac0;
+  --grayedTextColor: #909498;
+}
+
+.navbar {
+  background-color: #0e1922;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: fixed;
+  height : 100%;
+  padding-bottom: 0px;
+  padding-top: 0px;
+}
+
+.navigation {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 24px 20px 24px 24px;
+  position: relative;
+}
+
+.frame {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 11px;
+  position: relative;
+}
+
+.group {
+  height: 28px;
+  object-fit: cover;
+  position: relative;
+  width: 30px;
+}
+
+.text-wrapper {
+  color: #ffffff;
+  font-family: "Inter-Bold", Helvetica;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: normal;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.text-wrapper :hover {
+  transform: scale(1.07);
+  transition: all ease-in-out 0.1s;
+  color: var(--primaryColor);
+}
+
+.vector {
+  position: relative;
+  width: 192px;
+  border-bottom: 1px solid var(--grayedTextColor);
+}
+
+.tab {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 8px;
+  position: relative;
+
+  &.active {
+    color: var(--primaryColor);
+  }
+}
+
+.tab:hover {
+  transform: scale(1.07);
+  transition: all ease-in-out 0.1s;
+  color: var(--primaryColor);
+  cursor: pointer;
+}
+
+.text-wrapper-2 {
+  color: #909498;
+  font-family: "Inter-Regular", Helvetica;
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.tab-2 {
+  align-items: center;
+  background-color: #0e1922;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 8px;
+  position: relative;
+}
+
+.img {
+  height: 16px;
+  position: relative;
+  width: 16px;
+}
+
+.text-wrapper-3 {
+  color: #7e4abf;
+  font-family: "Inter-Medium", Helvetica;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.text-wrapper-tab {
+  color: #ffffff;
+  font-family: "Inter-Regular", Helvetica;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.active {
+  color: var(--primaryColor); 
+}
+
+.user-info {
+  align-self: flex-end;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 0px 19px 55px 20px;
+  position: relative;
+}
+
+.vector-2 {
+  height: 1px;
+  margin-right: -3px;
+  margin-top: -0.5px;
+  object-fit: cover;
+  position: relative;
+  width: 224px;
+}
+
+.frame-2 {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 8px;
+  margin-bottom: -26px;
+  margin-right: -5px;
+  position: relative;
+}
+
+.ellipse {
+  background-color: #7e4abf;
+  border-radius: 18px;
+  height: 36px;
+  position: relative;
+  width: 36px;
+}
+
+.group-2 {
+  height: 34px;
+  position: relative;
+  width: 154px;
+}
+
+.text-wrapper-5 {
+  color: #ffffff;
+  font-family: "Inter-Regular", Helvetica;
+  font-size: 16px;
+  font-weight: 400;
+  height: 19px;
+  left: 0;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  white-space: nowrap;
+}
+
+.text-wrapper-6 {
+  color: #909498;
+  font-family: "Inter-Regular", Helvetica;
+  font-size: 12px;
+  font-weight: 400;
+  height: 15px;
+  left: 0;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 19px;
+}
+
+.frame-3 {
+  height: 24px;
+  position: relative;
+  width: 24px;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: absolute;
+  top: -40px; // Adjust depending on your layout
+  right: 10px; // Adjust depending on your layout
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  z-index: 1000;
+}
+
+.dropdownItem {
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.dropdownItem:hover {
+  background-color: #f0f0f0;
+}

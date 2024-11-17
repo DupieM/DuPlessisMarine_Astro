@@ -1,0 +1,21 @@
+{
+  "name": "astro",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "wait-on http://localhost:3000 && echo 'Server started' && electron .",
+    "react-start": "cd react-app && cross-env BROWSER=none npm start",
+    "dev": "concurrently -k \"npm run react-start\" \"npm start\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "cross-env": "^7.0.3",
+    "electron": "^31.3.1",
+    "wait-on": "^7.2.0"
+  }
+}

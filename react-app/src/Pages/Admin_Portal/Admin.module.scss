@@ -1,0 +1,358 @@
+.adminMainContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.admin_container {
+    display: flex;
+    align-content: center;
+    justify-content: left;
+    width: 980px;
+    height: 700px;
+    border-radius: 10px;
+    background-color: #182229;
+}
+
+.admin_container_two {
+    display: flex;
+    flex-direction: row;
+    margin-left: 35px;
+    margin-bottom: 0px;
+}
+
+.main_head {
+    letter-spacing: 2px;
+    color: white;
+    font-size: 30pt;
+    margin-top: -25px;
+    margin-left: 35px;
+    margin-bottom: -15px;
+}
+
+.sub_head {
+    letter-spacing: 2px;
+    color: white;
+    font-weight: 100;
+    margin-left: 35px;
+    font-size: 20pt;
+    margin-bottom: -5px;
+}
+
+.body {
+    border-radius: 5px;
+    border: 0.5pt solid white;
+    height: 12px;
+    width: 70px;
+    padding: 10px;
+    color: white;
+    font-weight: 100;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.image {
+    height: 14px;
+    margin-right: 10px;
+}
+
+.searchFieldCon {
+    margin-top: 22px;
+    border: 1px solid #e5e5e6;
+    padding: 5px;
+    border-radius: 5px;
+    height: 18px;
+}
+  
+.searchFieldCon img {
+    width: 16px;
+    margin-right: 7px;
+}
+
+.filterSearchInput {
+    // border: 1px solid #E5E5E6;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+
+.research {
+    margin-top: 17px;
+    margin-left: 710px;
+}
+
+.filterOption {
+    cursor: pointer;
+    transition: all ease-in-out .1s;
+    color: white;
+    background-color: #7049a460;
+    width: 80px;
+    height: 40px;
+    border-radius: 5px;
+
+
+    &:hover {
+        transition: all ease-in-out .1s;
+        // Glass Effect
+        background: rgba(144, 19, 254, 0.25);
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
+    }
+}
+
+.filterOptionText {
+    font-size: 12pt;
+    font-weight: 700px;
+}
+
+.thrityDaysFilterBtn {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    margin: -5px;
+    padding-left: 16px;
+    cursor: pointer;
+    color: white;
+}
+
+.admin_card {
+    padding: 5px;
+    margin-left: 35px;
+    width: 1104px;
+    display: flex;
+    flex-direction: column;
+    // height: 820px;
+    background-color: #0E1922;
+    border-radius: 10px;
+}
+
+.admin_container_three {
+    height: 40px;
+    padding: 1px;
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+    margin-right: 10px;
+    border-bottom: 2px solid #303030;
+}
+
+.paragraph {
+    font-size: 15pt;
+    font-weight: lighter;
+    color: white;
+    margin-right: 123px;
+    margin-top: 10px;
+    // background-color: lightcoral;
+}
+
+.paragraph_one_two {
+    font-size: 15pt;
+    font-weight: lighter;
+    color: white;
+    margin-right: 220px;
+    margin-top: 10px;
+    // background-color: lightskyblue;
+}
+
+.paragraph_two {
+    font-size: 15pt;
+    font-weight: lighter;
+    color: white;
+    margin-right: 54px;
+    margin-top: 10px;
+    // background-color: lightseagreen;
+}
+
+.paragraph_three {
+    font-size: 15pt;
+    font-weight: lighter;
+    color: white;
+    margin-right: 50px;
+    margin-top: 10px;
+    // background-color: lightcoral;
+}
+
+.paragraph_four {
+    font-size: 15pt;
+    font-weight: lighter;
+    color: white;
+    margin-right: 62px;
+    margin-top: 10px;
+    // background-color: lightseagreen;
+}
+
+.paragraph_four_two {
+    font-size: 15pt;
+    font-weight: lighter;
+    color: white;
+    margin-right: 78px;
+    margin-top: 10px;
+    // background-color: lightskyblue;
+}
+
+.paragraph_five {
+    font-size: 15pt;
+    font-weight: lighter;
+    color: white;
+    margin-top: 10px;
+    // background-color: lightcoral;
+}
+
+.admin_card_two {
+    padding: 0;
+    margin-left: 0px;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: -15px;
+}
+
+.image2 {
+    height: 30px;
+    margin-top: 20px;
+    margin-left: 18px;
+    margin-right: 20px;
+}
+
+.name_box {
+    margin-right: 0px;
+    width: 130px;
+    // background-color: lightcoral;
+}
+
+.paragraph_six {
+    font-size: 12pt;
+    font-weight: lighter;
+    color: white;
+    line-height: 0px;
+    margin-top: 25px;
+}
+
+.paragraph_seven {
+    font-size: 10pt;
+    font-weight: lighter;
+    color: #909498;
+    line-height: 12px;
+}
+
+.paragraph_seven_two {
+    font-size: 13pt;
+    font-weight: lighter;
+    text-align: left;
+    color: #909498;
+    line-height: 0px;
+    width: 270px;
+    margin-top: 33px;
+    margin-right: 0px;
+    // background-color: lightskyblue;
+}
+
+.join_date_box {
+    text-align: left;
+    width: 138px;
+    // background-color: lightseagreen;
+}
+
+.paragraph_eight {
+    font-size: 13pt;
+    font-weight: lighter;
+    text-align: center;
+    color: #909498;
+    line-height: 0px;
+    width: 80px;
+    margin-top: 33px;
+    margin-right: 0px;
+    // background-color: lightcoral;
+}
+
+.paragraph_eight_two {
+    font-size: 13pt;
+    font-weight: lighter;
+    text-align: left;
+    color: white;
+    line-height: 0px;
+    width: 124px;
+    margin-top: 33px;
+    margin-right: 0px;
+    // background-color: lightskyblue;
+}
+
+.box {
+    width: 37px;
+}
+
+.box_two {
+    width: 28px;
+}
+
+.paragraph_nine {
+    font-size: 13pt;
+    font-weight: lighter;
+    color: #0B9457;
+    line-height: 5px;
+    margin-top: 33px;
+    width: 117px;
+    // background-color: lightseagreen;
+}
+
+.paragraph_ten {
+    font-size: 13pt;
+    font-weight: lighter;
+    color: #FC684E;
+    line-height: 0px;
+    margin-top: 33px;
+}
+
+.body_three {
+    border-radius: 5px;
+    border: 0.5pt solid white;
+    height: 20px;
+    width: 85px;
+    padding-top: 9px;
+    padding-bottom: 8px;
+    padding-left: 12px;
+    color: white;
+    font-weight: 100;
+    margin-left: 0px;
+    font-size: 12pt;
+    cursor: pointer;
+}
+
+.body_four {
+    border-radius: 5px;
+    border: 0.5pt solid white;
+    height: 20px;
+    width: 85px;
+    padding-top: 9px;
+    padding-bottom: 8px;
+    padding-left: 12px;
+    color: white;
+    font-weight: 100;
+    margin-left: 69px;
+    font-size: 12pt;
+}
+
+.image3 {
+    height: 16px;
+    margin-left: 18px;
+}
+
+.spacing {
+    color: #182229;
+}
+
+.popup {
+    position: absolute;
+    background-color: #7e4ac0;
+    color: white;
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    cursor: pointer;
+  }
